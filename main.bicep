@@ -71,7 +71,7 @@ resource deploymentScript 'Microsoft.Resources/deploymentScripts@2020-10-01' = {
     containerSettings: {
       containerGroupName: '${uniqueString(resourceGroup().id)}ci1'
     }
-    primaryScriptUri: 'https://raw.githubusercontent.com/caleteeter/polygon-azure/main/scripts/deploy.sh'
+    primaryScriptUri: 'https://raw.githubusercontent.com/caleteeter/bicep-deploy-test/main/scripts/deploy.sh'
     timeout: 'PT30M'
     cleanupPreference: 'OnSuccess'
     azCliVersion: '2.28.0'
